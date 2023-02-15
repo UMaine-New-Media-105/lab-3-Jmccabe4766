@@ -4,12 +4,14 @@ function setup() {
 }
 function draw(){
    background("Blue");
-  if (mouseIsPressed) {
+  if (mouseX < 100) {
     background("salmon");
   } 
-  else {
+  else if (mouseX >= 200){
     background('blue');
   }
+else {background('paleturquoise')}
+  
   beginShape();
   fill(0);
   vertex(100, 100);
@@ -24,3 +26,4 @@ function draw(){
   endShape();
   
 }
+
